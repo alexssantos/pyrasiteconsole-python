@@ -24,7 +24,13 @@ pipelines:
           # Antiga linha decodificadora: - echo $GCLOUD_API_KEY | base64 --decode --ignore-garbage > ./gcloud-api-key.json
           - echo $GCLOUD_API_KEYFILE > ./gcloud-api-key.json
           - gcloud auth activate-service-account --key-file gcloud-api-key.json
+
+          - gcloud app logs tail -s default
+
           # Linking to the Google Cloud project
-          - gcloud config set project $GCLOUD_PROJECT
+          - gcloud config set project $GCLOUD_PROJECT -- verbose
+          
+          - ls
+          
           # Deploying the application
-          - gcloud -q app deploy app.yaml
+          - gcloud -q app deploy app.yaml --verbosa
