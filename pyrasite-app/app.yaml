@@ -3,10 +3,10 @@ api_version: 1
 threadsafe: true
 handlers:
 - url: /
-  static_files: pyrasite-app/dist/pyrasite-app/index.html
-  upload: pyrasite-app/dist/pyrasite-app/index.html
+  static_files: dist/pyrasite-app/index.html
+  upload: dist/pyrasite-app/index.html
 - url: /
-  static_dir: pyrasite-app/dist
+  static_dir: dist
 
 
 # runtime: python27

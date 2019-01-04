@@ -27,12 +27,9 @@ pipelines:
 
           # Linking to the Google Cloud project
           - gcloud config set project $GCLOUD_PROJECT 
+                    
+          - cd pyrasite-app/dist/
           
-          - ls
-          - cd pyrasite-app
-          - ls
-          - cd dist
-          - ls
          
           # Deploying the application
           - gcloud -q app deploy app.yaml 
