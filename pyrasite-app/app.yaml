@@ -3,7 +3,7 @@ api_version: 1
 threadsafe: true
 handlers:
 - url: /
-  static_files: dist/index.html
-  upload: dist/index.html
+  static_files: dist/pyrasite-app/index.html
+  upload: dist/pyrasite-app/index.html
 - url: /
   static_dir: dist
