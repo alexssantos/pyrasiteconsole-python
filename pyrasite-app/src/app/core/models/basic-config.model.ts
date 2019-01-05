@@ -1,6 +1,7 @@
 export class BasicConfig {
 
-    processadorNome: string;
-    processadorFreq: number;
+	processadorNome: string;
+	processadorFreq: number;
+	date: Date;
 
 }
