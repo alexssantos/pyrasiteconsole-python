@@ -6,6 +6,20 @@ When you're done, you can delete the content in this README and update the file 
 
 ---
 
+## Starting API
+
+Instaling extensions:
+```
+pip install -r requirements.txt
+```
+
+Run the API
+```
+PYTHONPATH=./ FLASK_ENV=development  python ./app.py
+```
+
+---
+
 ## Edit a file
 
 You’ll start by editing this README file to learn how to edit a file in Bitbucket.
