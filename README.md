@@ -15,7 +15,7 @@ pip install -r requirements.txt
 
 Run the API
 ```
-PYTHONPATH=./ FLASK_ENV=development  python ./app.py
+PYTHONPATH=./ FLASK_ENV=development  python ./api.py
 ```
 
 ---
