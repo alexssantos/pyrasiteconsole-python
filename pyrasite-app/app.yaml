@@ -6,7 +6,7 @@ handlers:
   static_files: dist/pyrasite-app/index.html
   upload: dist/pyrasite-app/index.html
 - url: /
-  static_dir: dist
+  static_dir: dist/pyrasite-app
 
 
 # runtime: python27
