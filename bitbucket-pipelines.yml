@@ -26,5 +26,9 @@ pipelines:
           - gcloud auth activate-service-account --key-file gcloud-api-key.json
           # Linking to the Google Cloud project
           - gcloud config set project $GCLOUD_PROJECT
+          
+          # Getting in source Angular project
+          - cd pyrasite-app/
+          
           # Deploying the application
           - gcloud -q app deploy app.yaml
