@@ -6,6 +6,26 @@ When you're done, you can delete the content in this README and update the file 
 
 ---
 
+## Starting API
+
+### Instaling extensions:
+```
+pip install -r requirements.txt
+```
+
+### Exporting App Requiriments in a txt file
+> Essa ação é recomendada para pegar todoso os modulos instalados do ambiente. normalmente usado dentro do ambiente virtual onde normalmente é rodado o flask. Caso seja usado fora, será pego todos os modulos instalados no python do PC. 
+```
+pip freeze > requiriments.txt
+```
+
+### Run the API
+```
+PYTHONPATH=./ FLASK_ENV=development  python ./api.py
+```
+
+---
+
 ## Edit a file
 
 You’ll start by editing this README file to learn how to edit a file in Bitbucket.
